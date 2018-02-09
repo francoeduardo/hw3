@@ -1,0 +1,30 @@
+
+createCanvas(340,340);
+
+background (240);
+strokeWeight(1);
+
+
+for (var x=1; x<=170; x=x+10) {
+//upperleft
+  line(1,x,170,x);
+
+//uperright
+  line(171,x,340,x);
+  line(170+x,1,170+x,170);
+
+//lowerleft
+  line(1,170+x,170,170+x);
+  line(x,170,x,340);
+  line(1,170+x,x,170);
+  line(x,340,170,170+x);
+  
+//lowerright
+  line(1,170+x,340,170+x);
+  line(170+x,170,170+x,340);
+  line(171,170+x,170+x,170);
+  line(170+x,340,340,170+x);
+  
+  line(170+x,170,340,340-x);
+  line(171,170+x,340-x,340);
+}
