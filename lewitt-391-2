@@ -1,0 +1,37 @@
+
+createCanvas(340,340);
+
+background (240);
+strokeWeight(20);
+
+
+for (var x=10; x<=170; x=x+40) {
+//upperleft
+  stroke(0);
+  line(x,1,x,170);
+
+//uperright
+  stroke(255,200,0);
+  line(170,x,340,x);
+}
+
+
+for (var y=10; y<=170; y=y+55) {
+//lowerleft
+  stroke(255,0,0);
+  line(1,170+y,y,170);
+  line(y,340,170,170+y);
+  
+ //lowerright
+  stroke(0,0,255);
+  line(170,170+y,340-y,340);
+  line(170+y,170,340,340-y);
+}
+
+//squaresOutline
+noFill();
+stroke(0);
+rect(10,10,160,160);
+rect(170,10,160,160);
+rect(170,170,160,160);
+rect(10,170,160,160);
