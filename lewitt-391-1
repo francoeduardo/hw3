@@ -21,7 +21,7 @@ for (var y=10; y<=170; y=y+55) {
   
  //lowerright
   line(170,170+y,340-y,340);
-  line(170+y,170,340,340-y);
+  line(210+y,170,340,300-y);
 }
 
 //squaresOutline
